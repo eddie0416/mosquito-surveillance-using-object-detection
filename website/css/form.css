@@ -1,0 +1,184 @@
+@import url('font.css');
+
+body{
+    background-image: url('https://i.pinimg.com/564x/15/4e/2d/154e2d8378a9dedebd9feac5df24764c.jpg');
+    background-size: cover; 
+    background-position: center;
+    overflow-y: scroll; /* 總是顯示垂直方向上的捲動條（讓各頁面一致） */
+    
+}
+
+h2{
+    font-family: 'OpenHuninn','Times New Roman' ; 
+    margin-left: 1.563vw;
+    margin-right: 1.563vw; 
+    margin-bottom: 0.7813vw;
+    padding: 0;
+    font-size: 1.953vw; /* 設置字體大小 */
+}
+
+
+.form_body {
+    font-family: 'OpenHuninn','Times New Roman' ;
+    margin-left: 1.563vw;
+    margin-right: 1.563vw;
+
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 1.563vw; /* 設置字體大小 */
+    line-height: 1.8; /* 行距 */
+    
+
+}
+
+label{
+    font-family: 'OpenHuninn','Times New Roman' ; 
+    margin-left: 1.563vw;
+    margin-left: 1.563vw;
+    margin-bottom: 1.709vh; 
+    padding: 0;
+    font-size: 1.563vw; /* 設置字體大小 */
+}
+
+input[type="text"]{
+    font-family: 'OpenHuninn','Times New Roman' ; 
+    height: 5.982vh; /* 調整元素高度 */
+    border-radius: 10px; /* 圓弧形；圓角半徑 */
+    border:2px;
+    font-size:1.563vw;
+}
+
+input[type="datetime-local"] {
+    font-family: 'OpenHuninn','Times New Roman' ; 
+    width: 23.438vw; /* 調整寬度 */
+    height:  5.983vh; /* 調整高度 */
+    padding: 0.625vw; /* 調整內邊距 */
+    font-size: 1.563vw; /* 調整字體大小 20px */
+    border: 1px solid #ccc; /* 調整邊框顏色和粗細 */
+    border-radius: 10px; /* 圓弧形；圓角半徑 */
+    background-color: #f8f8f8; /* 調整背景顏色 */
+    box-sizing: border-box; /* 讓內邊距和邊框不影響元素寬度 */
+}
+
+input[type="file"]{
+    font-family: 'OpenHuninn','Times New Roman' ; 
+    width: 25vw; /* 調整寬度 22vw*/
+    height:  6vh; /* 調整元素高度 */
+    border:2px;
+    font-size:1.5625vw;
+}
+
+/* 聚焦時的樣式 */
+input[type="datetime-local"]:focus {
+    border-color: #eda72d; /* 聚焦時修改邊框顏色 */
+    outline: none; /* 去掉聚焦時的默認輪廓 */
+}
+
+select{
+    font-family: 'OpenHuninn','Times New Roman' ; 
+    border-radius: 10px; /* 圓弧形；圓角半徑 */
+    font-size:1.5625vw;
+}
+
+/* 驗證格式是否正確 
+input.valid {
+    border: 2px solid rgb(56, 156, 56);
+}*/
+
+/* 開始查詢按鈕 */
+input[type="submit"] {
+    font-size: 1.5625vw; 
+    font-family: 'OpenHuninn','Times New Roman' ;
+    color: #ffffff; 
+    background-color: #3f3b28; 
+    border: none; /* 移除邊框 */
+    padding: 1.368vh 1.172vw;
+    border-radius: 20px; /* 圓弧形；圓角半徑 */
+    cursor: pointer; /* 鼠標改為手指 */
+}
+
+input[type="submit"]:hover {
+    background-color: #ed710b; /* 鼠標觸碰時改背景色 */
+}
+
+/*查詢結果*/
+
+
+/* 設定整個表格的外觀 */
+table {
+    border-collapse: collapse; /* 合併邊框線 */
+    width: 100%; /* 設定寬度為 100% */
+    color: #573a2e; /* 設定文字顏色為 #fff */
+}
+
+/* 設定表格的邊框線 */
+table, th, td {
+    border: 1px solid #212122; /* 設定邊框線為 1px 寬的 #212122 */
+}
+
+/* 設定表頭的背景顏色、文字顏色、對齊方式 */
+th {
+    height: 8.547vh; /* 設定表頭高度為50px */
+    font-weight: normal; /* 設定字體粗細為正常 */
+    background-color: #593c23; /* 設定背景顏色為 #212122 */
+    color: #ffffff; /* 設定文字顏色為 #fff */
+    text-align: center; /* 設定文字靠左對齊 */
+}
+
+/* 設定偶數行的背景顏色 */
+tr:nth-child(even) {
+     background-color: #fff4ddb8; /* 設定背景顏色為 #f2f2f2 */
+}
+tr:nth-child(odd) {
+    background-color: #e3ddfcad; /* 設定背景顏色為 #f2f2f2 */
+}
+
+/* 設定鼠標移到表格上方時的背景顏色 */
+tr:hover {
+    background-color: #987b5f63; /* 設定背景顏色為 #ddd */
+    color: #ffffff;
+}
+
+/* 設定表格內容的對齊方式 */
+td {
+    text-align: center; /* 設定文字靠左對齊 */
+    padding: 8px; /* 設定內距為 8px */
+}
+
+#searchResult {
+    font-family: 'OpenHuninn', 'Times New Roman';
+    margin-left: 1.5625vw;
+    margin-right: 1.5625vw;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 1.406vw;
+    line-height: 1.8;
+}
+
+#searchResult p {
+    margin-left: 1.5625vw; 
+    font-size: 1.5625vw;
+}
+
+.responsive-image {
+    max-width: 80%; /* 圖像最大寬度為視窗寬的80% */
+    height: auto; /* 保持圖像的寬高比例 */
+   
+    margin-left: 1.563vw; /* 圖像左邊界 */
+}
+
+
+button {
+    font-size: 1.5625vw; 
+    font-family: 'OpenHuninn','Times New Roman' ;
+    color: #ffffff; 
+    background-color: #3f3b28; 
+    border: none; /* 移除邊框 */
+    padding: 1.71vh 1.56vw; /*10px 20px 上下、左右*/
+    border-radius: 20px; /* 圓弧形；圓角半徑 */
+    cursor: pointer; /* 鼠標改為手指 */
+}
+
+button:hover {
+    background-color: #ed710b; /* 鼠標觸碰時改背景色 */
+}

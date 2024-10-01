@@ -1,0 +1,60 @@
+@import url('font.css');
+
+body{
+    background-image: url('https://i.pinimg.com/564x/15/4e/2d/154e2d8378a9dedebd9feac5df24764c.jpg');
+    background-size: cover; 
+    background-position: center;
+    overflow-y: scroll; /* 總是顯示垂直方向上的捲動條（讓各頁面一致） */
+    
+}
+
+h2{
+    font-family: 'OpenHuninn','Times New Roman' ; 
+    margin-left: 0;
+    margin-right: 1.563vw; 
+    margin-bottom:1.709vh;
+    padding: 0;
+    font-size: 2.344vw; /* 設置字體大小 */
+}
+
+
+.map_body {
+    font-family: 'OpenHuninn','Times New Roman' ;
+    margin-left: 3%;
+    margin-right: 1.563vw;
+
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 1.563vw; /* 設置字體大小 */
+    line-height: 1.8; /* 行距 */
+    
+
+}
+
+#map {
+    height: 68.376vh; /* 設定地圖高度 */
+    width: 45%; /* 設定地圖寬度 */
+    margin-bottom: 8.547vh;
+
+}
+
+/* 標記之訊息窗口的樣式 */
+.custom-info-window {
+    max-width: 23.438vw; /* 最大寬度 */
+    width: auto; /* 自動寬度 */
+    padding: 0.781vw; /* 內邊距 */
+    background-color: #fff; /* 背景顏色 */
+    border: 1px solid #ccc; /* 邊框 */
+    border-radius: 5px; /* 圓角 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* 陰影效果 */
+}
+
+.custom-info-window h3 {
+    font-size:1.25vw; /* 標題字體大小 */
+    margin-bottom: 0.855vh; /* 底部間距 */
+}
+
+.custom-info-window p {
+    font-size: 1.094vw; /* 內容字體大小 */
+    color: #333; /* 文字顏色 */
+}

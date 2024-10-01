@@ -1,0 +1,221 @@
+@import url('font.css');
+
+body{
+    background-image: url('https://i.pinimg.com/564x/15/4e/2d/154e2d8378a9dedebd9feac5df24764c.jpg');
+    background-size: cover; 
+    background-position: center;
+    overflow-y: scroll; /* 垂直方向上的捲動條總是顯示 */
+}
+
+.home_body {
+    font-family: 'OpenHuninn','Times New Roman' ;
+    margin-left: 1.563vw;/*20px*/
+    margin-right: 1.563vw;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 1.40625vw; /* 設置字體大小18px */
+ }
+
+
+ h2{
+    font-size: 1.719vw;
+    margin-bottom: 0;
+    /* margin-left: 10px; 調整段落文字的左邊距 */
+}
+
+ p {
+    margin-right: 0; /* 重設段落的預設外邊距 */
+    /*margin-left: 10px;  調整段落文字的左邊距 */
+    width:70%;
+    word-wrap: break-word; /* 控制文字換行 */
+    line-height: 1.5; /* 行高 */
+    /*border: 2px solid rgb(12, 114, 67);測試用*/
+  }
+
+@keyframes fadeIn {  /*上升、淡入*/
+    from {
+      opacity: 0; /* 起始狀態，完全透明 */
+      transform: translateY(8.547vh); /* 起始狀態，元素向下移動 50 px */
+    }
+    to {
+      opacity: 1; /* 結束狀態，完全不透明 */
+      transform: translateY(0); /* 結束狀態，元素向上移動到原始位置 */
+    }
+  }
+
+.container:not(button) {
+    pointer-events: none; /* 非按鈕元素禁止鼠標事件 */
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh; /* 容器與視窗高度比例 */
+  
+    opacity: 0; /* 初始設置透明度為 0，元素隱藏 */
+    animation: fadeIn 2s ease-in-out forwards; /* 淡入fadeIn動畫效果 */
+    transform: translateY(8.547vh); /* 初始設置垂直位移，元素向下移動 50 像素 */
+    pointer-events: auto;
+    /* border: 2px solid rgb(114, 0, 254);設置容器的邊框：2px 寬度，紅色顏色 */
+    
+    box-sizing: border-box; /* 讓內邊距和邊框計算在內容寬度內 */
+  }
+
+
+  .container .text-overlay p {
+    margin-right: 0; /* 重設段落的預設外邊距 */
+    margin-left: 5%; /* 調整段落文字的左邊距50px 3.606vw */
+    width:90%;
+    word-wrap: break-word; /* 控制文字換行 */
+    line-height: 1.5; /* 行高 */
+    /*border: 2px solid rgb(252, 0, 214);/*測試用*/
+  
+    
+  }
+
+  .container h2 {
+    margin-right: 0px; /* 外邊距 */
+    margin-left: 5%; 
+    width:90%;
+    word-wrap: break-word; /* 控制文字換行 */
+    /*border: 2px solid rgb(252, 139, 0);測試用*/
+    
+  }
+
+  .container  p {
+    margin-right: 0; /* 重設段落的預設外邊距 */
+    margin-left: 50%; /* 調整段落文字的左邊距50px */
+    width:80%;
+    word-wrap: break-word; /* 控制文字換行 */
+    line-height: 1.5; /* 行高 */
+    
+    
+  }
+
+  #begin {
+    position: absolute;
+    /* border: 2px solid rgb(255, 0, 230); 設置容器的邊框：2px 寬度，紅色顏色 */
+    bottom: 29.0769vh;
+    left:70%; 
+    z-index: 1000;
+
+    /* 淡入fadeIn動畫效果 */
+    opacity: 0; /* 初始設置透明度為 0，元素隱藏 */
+    animation: fadeIn 2s ease-in-out forwards; /* 淡入fadeIn動畫效果 */
+    transform: translateY(8.547vh); /* 初始設置垂直位移，元素向下移動 50 像素 */
+    
+  }
+
+
+/*.box:hover img {
+    transform: scale(1.03); 滑鼠懸停時放大 
+}*/
+
+.box {
+    position: relative;
+    margin-left: 13vw; /* 調整段落文字的左邊距50px */
+    width:87vw;
+    height:75vh;
+    transition: transform 0.3s ease; /* 定義動畫過渡效果 */
+
+    display: flex;
+    flex-direction: column; /* 讓子元素垂直排列 */
+    justify-content: flex-start; /* 子元素靠上排列 */
+    align-items: flex-start; /* 子元素居中對齊 */
+    box-sizing: border-box; /* 確保內邊距和邊框包含在寬度內 */
+
+    /*border: 2px solid rgb(4, 252, 0);   測試用 */
+  }
+
+.box img {
+    max-width: 58%;  /*讓圖片最大寬度不超過容器寬度 */
+    height:auto;
+    /* border: 2px solid red; 設置容器的邊框：2px 寬度，紅色顏色 */
+  }
+
+.text-overlay {
+    position: absolute; /* 絕對定位 */
+    /*display: flex;
+    flex-direction: column;  讓子元素垂直排列 
+    justify-content: flex-start; /* 子元素靠上排列 
+    align-items: flex-start; /* 子元素居中對齊 
+    box-sizing: border-box; /* 確保內邊距和邊框包含在寬度內 */
+
+    top: 10%;  /*距離容器頂部的距離 */
+    left: 0%;  /*距離容器左側的距離 */
+    /*transform: translateY(100%);  以自身大小為基準點向左上移動 */
+    color: rgb(81, 52, 30); 
+    text-align:left;
+
+    margin-right: 0; /* 段落的外邊距 */
+    margin-left: 0vw; /* 段落文字的左邊距 */
+    /*margin-top: 0;  根據需要調整文本位置 */
+   
+    width:58%;
+    height:90%;
+    word-wrap: break-word; /* 控制文字換行 */
+
+    /*border: 2px solid red; 測試用*/
+
+}
+
+/*.box:hover .text-overlay {
+    font-size: 24px; 滑鼠懸停時放大
+}*/ 
+
+button {
+    position: absolute;
+    /*pointer-events:all;*/
+    bottom: -5.128vh; /* 初始時位於底部之外30px */
+    left:75%; /* 按鈕左側與容器的水平居中對齊 */
+    z-index: 999; /* 將按鈕放置在最上層 */
+    transform: translateX(-50%);  /*使按鈕水平居中 */
+    opacity: 0; /* 初始透明度為 0 */
+
+    font-family: 'OpenHuninn','Times New Roman' ;
+    font-size: 1.406vw; 
+    color: #ffffff; 
+    background-color: #3f3b28; 
+    border: none; /* 移除邊框 */
+    padding: 1.71vh 1.56vw; /*10px 20px 上下、左右*/
+    border-radius: 20px; /* 圓弧形；圓角半徑 */
+    cursor: pointer; /* 鼠標改為手指 */
+   
+}
+
+.show-button button {
+    position: absolute;
+    bottom: 23.0769%; /* 淡入後位於底部135px */
+    opacity: 1; /* 淡入後透明度為 1 */
+    z-index: 999; /* 將按鈕放置在最上層 */
+    transition: bottom 1.8s ease-in-out, opacity 1.8s ease-in-out; /* 過渡效果 */
+}
+
+button:hover {
+    background-color: #ed710b; /* 鼠標觸碰時改背景色 */
+}
+
+/*用於mat_ref.php的css*/
+.self-intro img {
+    float: left; /* 圖片往左浮動 */
+    width: 15.625vw;/*200px*/
+    height: auto; 
+    margin-right: 1.563vw; /* 右側（與文字）間距20px */
+    margin-left: 0.78125vw;
+    border: 0.391vw solid rgb(95, 69, 47); /* 添加邊框 */
+
+    pointer-events: none; /* 禁止鼠標事件，防止圖片被拖曳下載 */
+
+}
+
+.home_body a {
+    color: rgb(192, 88, 14); 
+    text-decoration:none; /*取消連結下底線*/
+}
+
+.home_body h3 {
+    color: rgb(91, 56, 18); 
+    font-weight: normal;
+    line-height: 0.8; /* 行距 */
+}

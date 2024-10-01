@@ -1,0 +1,120 @@
+@import url('font.css');
+
+body {
+  /*width: 100%; */
+  margin: 0 ;
+  padding: 0;
+
+}
+
+/* 調整標題樣式 */
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between; /* 將元素分散排列 */
+   background-color:rgba(255, 255, 255, 0.1); /* #e6d394;  設定背景色 */
+   /*background-color:#ba3131;*/
+   color: #3b2d14; /* 設定字體顏色 */
+   padding-top: 0.858vh; /* 添加一些內邊距 */
+   /*padding: 5px; /* 添加一些內邊距 */
+   height: 13.675vh; /* 設定橫幅高度 80px*/ 
+   font-family: 'OpenHuninn','Times New Roman';
+   
+ }
+ .header img {
+   margin-right: 0.391vw; /* 調整logo和標題之間的間距 5px*/
+   pointer-events: none; /* 禁止鼠標事件，防止圖片被拖曳下載 */
+ }
+ .header h1 {
+   display: inline-block; /* 將標題設置為inline-block，使其與圖像在同一行 */
+   font-size:2.344vw;/*30px*/
+ }
+
+.navbar ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   font-family: 'OpenHuninn','Times New Roman' ;
+}
+
+ .navbar {
+   margin-left: auto; /* 將導覽列置右 */
+ }
+ .navbar li {
+   padding-right: 1.563vw; /* 調整導覽列右側與頁面邊界的距離20px */
+   /* margin-right: 30px; /* 設定選項之間的間隔 */
+   font-size: 1.406vw; /* 設置選單字體大小18px */
+   font-weight: bold; /* 設置選單字體粗體 */
+   
+ }
+
+ .navbar li a {
+   color: #3b2d14;
+   text-decoration: none;
+   padding: 0.781vw; /*10px*/
+ }
+ 
+ .navbar li a:hover {
+   color: #db6607; /* 變色後的字體顏色 */
+ }
+
+ .navbar li a {
+   color: #3b2d14;
+   text-decoration: none;
+   padding: 0.781vw;
+ }
+
+ /* 滑鼠移到選單項目時顯示子選單 */
+.navbar li:hover .submenu-content {
+   display: block;
+}
+
+/* 滑鼠移到選單項目時顯示子選單 */
+.navbar li:not(:hover) .submenu-content {
+   display: none;
+}
+
+ 
+.submenu-content {
+   float: left;
+   display: none;
+   position: absolute;
+   top: 11vh; /*11% 子選單與導覽列 距離 */
+   padding: 0;  /*子選單內邊距 */
+   margin: 0; /* 子選單內項 外邊距 */
+   background-color: rgba(255, 255, 255, 0.836);
+   /*min-width: auto;  讓寬度自適應內部項目的寬度 */
+   /*min-height: auto;  讓寬度自適應內部項目的寬度 */
+   box-shadow: 0px 8px 16px 0px rgba(122, 113, 70, 0.2);
+   z-index: 1;
+   /*border: 1px solid #241d16;  子選單的邊線 */
+ }
+
+ .submenu-content a {
+   display: block;
+   width: 100%; /* 子選單內項寬度設置為100% */
+   margin-left: 0; /* 子選單內項左間距 */
+   margin-right: 0; /* 子選單內項右間距 */
+   padding: 8px 0; /* 子選單內項間距 */
+   font-size: 1.25vw; /* 16px子選單內項字體大小 */
+
+   /* 底部邊線設定上左右 */
+
+   border-left: 1px solid #241d16; /* 左邊框 */
+   border-right: 1px solid #241d16; /* 右邊框 */
+   border-top: 1px solid #241d16;
+   
+ }
+
+
+/* 下底線 用內部項底線設定 */
+ul.submenu-content  > li:last-child {
+   border-bottom: 1px solid #241d16;
+}
+
+
+/* 滑鼠移到子選單項目時變背景色 */
+.submenu-content a:hover {
+   background-color: #ffffff; /* 滑鼠懸停時的背景顏色 */
+}
