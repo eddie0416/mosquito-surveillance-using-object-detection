@@ -34,7 +34,7 @@ def sql_query(query_type, data):
     conn = mysql.connector.connect(
         host='localhost',       # 連線主機名稱
         user='root',            # 登入帳號
-        password='u110029024',  # 登入密碼
+        password='',  # 登入密碼
         database='mosquitoDB'
     )
 

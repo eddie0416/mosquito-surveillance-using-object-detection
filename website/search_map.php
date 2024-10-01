@@ -9,7 +9,7 @@
     <?php include("nav.php");?>
 
     <!-- 引入 Google 地圖 JavaScript API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNR4GLFP9yDmxuWKWKHd46OnhiRKh-N3o"></script>    
+    <script src="https://maps.googleapis.com/maps/api/js?key=??"></script>    
 </head>
 <div class= map_body>
     <h2>點選地圖上捕蚊燈以查看更多資訊：</h2>

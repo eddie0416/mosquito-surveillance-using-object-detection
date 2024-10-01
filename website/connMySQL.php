@@ -2,7 +2,7 @@
 // 設定資料庫連線參數
 $servername = "localhost";
 $username = "root";
-$password = "u110029024";
+$password = "";
 $dbname = "mosquitoDB";
 
 // 建立與資料庫的連線
